@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(){
+            var AMOUNT=document.getElementById("amount").value;
+            var RATE=document.getElementById("rate").value;
+            var EMI=document.getElementById("emi").value;
+
+            var formula=(AMOUNT*RATE*EMI)/100;
+            var month=EMI*12;
+            var totalamount=AMOUNT+formula;
+            var Emi1= totalamount/month;
+            
+            document.getElementById("out1").value=month
+            document.getElementById("out2").value=Emi1
+            document.getElementById("out3").value=formula
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="amount">
+    <br>
+    <input type="text" id="rate">
+    <br>
+    <input type="text" id="emi">
+    <br>
+    <button onclick="sum()">Calculater</button>
+    <input type="text" id="out1">
+    <input type="text" id="out2">
+    <input type="text" id="out3">
+    
+</body>
+</html>

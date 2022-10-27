@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.display{
+    display: block;
+}
+
+.card2{
+    /* border: 2px solid black; */
+    margin-top: 54px;
+}
+.card3{
+    /* border: 2px solid black; */
+    margin-top: 54px;
+
+}
+.container{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 166, 0, 0.129);
+    padding: 30px;
+}
+select{
+    width: 400px;
+    height: 35px;
+}
+input{
+    width: 400px;
+    height: 35px;
+}

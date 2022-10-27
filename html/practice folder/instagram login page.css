@@ -1,0 +1,34 @@
+
+.container{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    width: 400px;
+    padding: 1rem;
+}
+#main{
+    display: flex;
+    justify-content: center;
+}
+#main{
+    background-color:gray;
+}
+/* .h1{font-style: italic;} */
+/* .chart1{} */
+.button1{padding: 10px;width: 270px;background-color: blue;color: white;border: 0ch;border-radius:5px;}
+/* .hr{} */
+.hr1{display: inline-block;padding-left: 115px;}
+.hr2{display: inline-block;padding-left: 115px;}
+.h6{display: inline-block;}
+/* .chart2{} */
+.input1{padding: 10px;width: 250px;}
+/* .chart3{} */
+.input2{padding: 10px;width: 250px;}
+.a{ padding-left: 150px;}
+.button2{padding: 10px;width: 270px;border: 0ch;border-radius: 5px;background-color:rgb(97, 171, 251);color: white;}
+/* .a2{} */
+#select1{
+    /* text-align: center; */
+    margin-left: 180px;
+}
+/* .maincontainer{} */

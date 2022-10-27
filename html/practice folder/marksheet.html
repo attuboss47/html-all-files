@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #table1{
+            border-collapse: collapse;
+        }
+        #table2{
+            border-collapse: collapse;
+        }
+    
+    </style>
+    <script>
+        function marksheet(){
+    
+           var M1=Number(document.getElementById("marks1").value);
+           var M2=Number(document.getElementById("marks2").value);
+           var M3=Number(document.getElementById("marks3").value);
+           var M4=Number(document.getElementById("marks4").value);
+           var M5=Number(document.getElementById("marks5").value);
+           
+           var total3 = document.getElementById("total").innerHTML= (M1+M2+M3+M4+M5);
+    
+           var total4 = document.getElementById("percent").innerHTML= total3 / 500 * 100 +"%"
+
+        }
+        function vanish(){
+         var total5 = document.getElementById("percent").innerHTML= 0
+         var M1=Number(document.getElementById("marks1").value = 0);
+           var M2=Number(document.getElementById("marks2").value = 0);
+           var M3=Number(document.getElementById("marks3").value = 0);
+           var M4=Number(document.getElementById("marks4").value = 0);
+           var M5=Number(document.getElementById("marks5").value = 0);
+           var total3 = document.getElementById("total").innerHTML=0
+           document.getElementById("input1").value=0
+           document.getElementById("input2").value=0
+           document.getElementById("input3").value=0
+           document.getElementById("input4").value=0
+        }
+        
+
+    </script>
+
+
+</head>
+<body>
+<div style="background-color: burlywood; padding-top: 20px; margin-left: 300px; margin-right: 300px;padding-bottom: 50px;">
+    <center>
+        <h1 style="color: navy;">PickupBizz Coaching Classes</h1>
+        <label for="">Name</label>
+        <input type="text" id="input1">
+        <label for="" >div</label>
+        <input type="text" id="input2"><br><br>
+        <label for="">class</label>
+        <input type="text" id="input3">
+        <label for="">seat no</label>
+        <input type="text" id="input4"><br>
+        
+    <div style="table-layout: fixed;">
+        <br><br>
+        <table border="1px" id="table1">
+            <tr>
+                <th>subject name</th>
+                <th>total marks</th>
+                <th >mark gained</th>
+            </tr>
+            
+            <tr>
+                <td>english</td>
+                <td>100</td>
+                <td ><input id="marks1" type="text"></td>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td>100</td>
+                <td ><input id="marks2" type="text"></td>
+            </tr>
+            <tr>
+                <td>science</td>
+                <td>100</td>
+                <td ><input id="marks3" type="text"></td>
+            </tr>
+            <tr>
+                <td>social science</td>
+                <td>100</td>
+                <td ><input id="marks4" type="text"></td>
+            </tr>
+            <tr>
+                <td>hindi</td>
+                <td>100</td>
+                <td ><input id="marks5" type="text"></td>
+            </tr>    
+            <tr>
+                <th><h3 id="percent"></h3></th>
+                <td>500</td>
+                <th><h3 id="total">0</h3></th>
+
+            </tr>
+            
+    </table>
+    </div>
+    <br><br>
+    <div>
+        <button onclick="marksheet()">submit</button>
+        <button onclick="vanish()">reset</button>
+    </center>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            height:400px ;
+            width: 400px;
+            border: 2px solid black;
+            position: relative;
+            
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+        }
+        #box4{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: yellow;
+
+        }
+        #box3{
+            position: absolute;
+            /* z-index: 2;*/
+            top: 0px;
+            right: 0px;
+            background-color:aqua;
+
+
+
+
+        }
+        #box2{
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            background-color:green;
+
+
+
+        }
+        #box1{
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            background-color: yellow;
+
+        }
+        #container1{position:absolute;
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+
+        }
+        #box11{ position: relative;
+
+        }
+        #box22{ position: relative;
+        }
+        #box33{ position: relative;
+            margin-left: 300px;
+            margin-top: px;
+        }
+        #box44{ position: relative;
+    
+        }
+        #chatbox{
+            height: 3000px;
+            width: 400px;
+            background-color: aqua;
+            border: 2px solid black;
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">    
+        <div id="box1" class="box">A</div>
+        <div id="box2" class="box">B</div>
+        <div id="box3" class="box">C</div>
+        <div id="box4" class="box">D</div>
+    </div>
+      
+    <div id="container1">    
+        <div id="box11" class="box">A</div>
+        <div id="box22" class="box">B</div>
+        <div id="box33" class="box">C</div>
+        <div id="box44" class="box">D</div>
+    </div>
+
+    <div id="chatbox"><h1>hii</h1></div>
+    
+</body>
+</html>

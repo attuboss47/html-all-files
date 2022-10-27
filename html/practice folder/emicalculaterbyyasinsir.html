@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function button1(){
+            var P= Number(document.getElementById("p").value)
+            var N= Number(document.getElementById("n").value)
+            var R= Number(document.getElementById("r").value)
+            var SI=(P*N*R)/100;
+            var MONTHS=N*12;
+            var totalAmount=P+SI;
+            var EMI=totalAmount/MONTHS;
+
+            document.getElementById("months").innerHTML=MONTHS;
+            document.getElementById("emi").innerHTML=EMI;
+            document.getElementById("intrest").innerHTML=SI;
+
+        
+        }
+        function resetData(){
+            document.getElementById("p").value=0
+            document.getElementById("n").value=0
+            document.getElementById("r").value=0
+            document.getElementById("emi").value=0
+            document.getElementById("intrest").value=0
+            document.getElementById("months").value=0
+            
+
+        }
+
+
+
+    </script>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr{border: 1px solid black;
+
+        }
+        th{border: 1px solid black;
+
+        }
+        td{border: 1px solid black;
+
+        }
+    </style>
+
+
+
+
+
+</head>
+<body style="background-color:yellow;">
+    <div>
+    <h1>EMI calculater</h1>
+    <div>
+    Principal Amount<input type="text" id="p">
+    <br>
+    <br>
+    Rate Of Intrest <input type="text" id="r">
+    <br>
+    <br>
+    Tenure <input type="" id="n">
+    <button onclick="button1()">calculate</button><br>
+    <button onclick="resetData()">reset</button>
+    
+
+    
+    <table>
+        <tr>
+            <td id="emi">0</td>
+            <td id="intrest">0</td>
+            <td id="months">0</td>
+        </tr>
+        <tr>
+            <th>EMI</th>
+            <th>Intrest</th>
+            <th>Months</th>
+        </tr>
+
+    </table>
+    </div>  
+</div>
+</div>
+</body>
+</html>

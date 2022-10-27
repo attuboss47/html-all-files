@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <style>
+    table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr{
+     border: 1px solid black;;
+}
+th{
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
+}
+#tr1{
+    background-color: aqua;
+    color: white;
+}
+.tr2{
+    background-color: brown;
+    color: white;
+}
+button:hover{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: 0ch;
+    
+}
+    </style>
+     <script>
+        function generateSal(basicSal){
+            var basicSal=document.getElementById("txtbasic").value;
+            var basicSal= Number(basicSal);
+            // alert(typeof basicSal);
+            document.getElementById("bp").innerHTML=basicSal;
+            var DA=basicSal*0.5;
+            var CA=basicSal*0.2;
+            var MA=basicSal*0.15;
+            var HRA=basicSal*0.4;
+            var FA=600;
+            var netSal=basicSal+DA+CA+MA+HRA+FA;
+            document.getElementById("da").innerHTML=DA;
+            document.getElementById("ca").innerHTML=CA;
+            document.getElementById("ma").innerHTML=MA;
+            document.getElementById("hra").innerHTML=HRA;
+            document.getElementById("fa").innerHTML=FA;
+
+            document.getElementById("te").innerHTML=netSal;
+        
+
+        }
+</script>
+
+
+</head>
+<body  >
+    <div>
+        <input type="text" id="txtbasic" >
+
+        <button onclick="generateSal()">generate</button>
+
+            <table>
+                <tr id="tr1">
+                    <th>Earning</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <th>Basic pay</th>
+                    <td id="bp">0</td>
+                </tr>
+                
+                <tr>
+                    <th>Dearness Allowance</th>
+                    <td id="da">0</td>
+                </tr>
+                
+                <tr>
+                    <th>Conveyance Allowance</th>
+                    <td id="ca">0</td>
+                </tr>
+                
+                <tr>
+                    <th>Medical Allowance</th>
+                    <td id="ma">0</td>
+                </tr>
+                
+                <tr>
+                    <th>House Rent Allowance</th>
+                    <td id="hra">0</td>
+                </tr>
+                
+                <tr>
+                    <th>Food Allowance</th>
+                    <td id="fa">0</td>
+                </tr>
+                <tr class="tr2">
+                    <th>Total Earning(Rounded)</th>
+                    <td id="te">0</td>
+                </tr>
+                
+            </table>
+        
+    </div>
+</body>
+</html>

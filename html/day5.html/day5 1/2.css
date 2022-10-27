@@ -1,0 +1,11 @@
+.main{
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+    margin-left: 300px; margin-top: 300px;
+    border-bottom: 100px;
+}
+.bc{font-size: 100px;
+    padding-left: 50px;
+    padding-top: 200px;
+}

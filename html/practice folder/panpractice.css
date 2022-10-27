@@ -1,0 +1,30 @@
+.display{
+    display: block;
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.card1{margin: 0px; }
+.card2{
+    /* border: 2px solid black; */
+margin-top: 54;}
+.card3{
+     /* border: 2px solid black; */
+    margin-top: 54px;}
+    .container{
+        border: 2px;
+        display: flex;
+        justify-content: space-around;
+        background-color: gainsboro;
+        padding: 30px;
+    }
+    select{width: 300px;
+    height: 35px;}
+    input{
+        width: 300px;
+        height: 35px;
+    }

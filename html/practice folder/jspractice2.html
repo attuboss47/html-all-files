@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hh1">heading</h1>
+    <h1 id="hh2">heading</h>
+    <h1 id="hh3">heading</h1>
+    <h1 id="hh4">heading</h1>
+    <button onclick="button1()">change</button>
+    <button onclick="button2()" >undo</button>
+</body>
+</html>
+<script>
+        function button1(){
+            document.getElementById("hh1").style.color="blue";
+            document.getElementById("hh2").style.color="yellow";
+            document.getElementById("hh3").style.color="pink";
+            document.getElementById("hh4").style.color="green";
+
+        }
+        function button2(){
+            document.getElementById("hh1").style.color="black";
+            document.getElementById("hh2").style.color="black";
+            document.getElementById("hh3").style.color="black";
+            document.getElementById("hh4").style.color="black";
+
+        }
+    </script>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function calcEMI() {
+        var P = Number(document.getElementById("p").value);
+        var N = Number(document.getElementById("n").value);
+        var R = Number(document.getElementById("r").value);
+
+        var SI = (P * N * R) / 100;
+        var MONTHS = N * 12;
+        var totalAmount = P + SI;
+        var EMI = totalAmount / MONTHS;
+
+        document.getElementById("months").innerHTML = MONTHS;
+        document.getElementById("emi").innerHTML = EMI;
+        document.getElementById("intrest").innerHTML = SI;
+      }
+      function resetData() {
+        document.getElementById("p").value = 0;
+        document.getElementById("n").value = 0;
+        document.getElementById("r").value = 0;
+
+        document.getElementById("months").innerHTML = 0;
+        document.getElementById("emi").innerHTML = 0;
+        document.getElementById("intrest").innerHTML = 0;
+      }
+    </script>
+  </head>
+  <body>
+    <label>Principle Amount</label>
+    <input type="text" id="p" /> <br /><br />
+
+    <label>Rate of Intrest</label>
+    <input type="text" id="r" /><br /><br />
+
+    <label>Tenure</label>
+    <input type="text" id="n" /><br /><br />
+
+    <button onclick="calcEMI()">Calculate</button>
+    <button onclick="resetData()">Reset</button>
+    <br />
+    <br />
+    <table border="2px">
+      <tr>
+        <td id="emi">0</td>
+        <td id="intrest">0</td>
+        <td id="months">0</td>
+      </tr>
+      <tr>
+        <th>EMI</th>
+        <th>Intrest</th>
+        <th>Months</th>
+      </tr>
+    </table>
+  </body>
+</html>
+

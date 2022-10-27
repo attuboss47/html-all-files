@@ -1,0 +1,16 @@
+.container{
+    margin-left: 100px;
+}
+.class1{background-color: rgb(207, 200, 134);
+padding: 15px;}
+
+
+.h1{display: inline-block;}
+.h2{display:inline-block;}
+.main1{
+    background-color: rgb(222, 214, 202);
+ display:block;   
+}
+.main2{
+    margin-top: 50px;
+}
